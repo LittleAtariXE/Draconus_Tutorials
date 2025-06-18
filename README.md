@@ -47,6 +47,41 @@
       Watch Tutorial 2 on Vimeo
     </a>
   </p>
+<hr>
+<h2>📹 Tutorial 3: Building and Installing the Compiler</h2>
+
+<p>
+  This tutorial explains how to install the cross-compilation system used by <strong>Draconus</strong> for building Windows executables directly from Linux.
+</p>
+
+<ul>
+  <li>Go to the <code>hive</code> section inside the Commander interface.</li>
+  <li>Type the command:<br>
+    <code>install</code><br>
+    This will show a list of available compilers along with their name, image size, availability, and description.
+  </li>
+  <li>If the desired compiler (e.g., <code>CrossComp</code>) is not yet installed, run:<br>
+    <code>install -i CrossComp</code><br>
+    This command will start downloading the required Docker image and begin building the compiler environment. It may take several minutes.
+  </li>
+  <li>
+    The compiler setup will take approximately <strong>5.5 GB</strong> of additional disk space.<br>
+    This includes the entire Linux-based system, emulators, and Windows cross-compilation toolchains.
+  </li>
+  <li>
+    Once the compiler is built, exit and re-enter the <code>hive</code> section to refresh the environment and apply the changes.
+  </li>
+  <li>
+    ✅ You are now ready to build <code>.exe</code> files directly from Linux!
+  </li>
+</ul>
+
+<p>
+  ▶️ <a href="https://vimeo.com/1094444812/645fe7987d" target="_blank">
+    Watch Tutorial 3 on Vimeo
+  </a>
+</p>
+
   
 <hr>
 <h3>📁 More tutorials coming soon...</h3>
