@@ -82,7 +82,36 @@
   </a>
 </p>
 
-  
+<hr>
+<h2>📹 Tutorial 4: Shellcode Creation Tutorial</h2>
+
+<p>This tutorial will guide you through the process of building your own shellcode using the internal worm and shellcode template system.</p>
+
+<ol>
+  <li><strong>To create shellcode</strong>, we need to add a worm template that enables shellcode generation.</li>
+  <li><strong>To view the list of templates</strong>, use the command: <code>show worm</code></li>
+  <li><strong>Find the shellcode-capable worm</strong>. In our example, it is <code>WShellcode</code>.</li>
+  <li><strong>Add it</strong> using the command: <code>add worm WShellcode</code></li>
+  <li><strong>Now that we have the main template</strong>, we need to select a shellcode template. Use the command: <code>show scode</code></li>
+  <li><strong>We'll use the <code>WEPy</code> shellcode</strong>, which allows embedding a Python payload. Add it with: <code>add scode WEPy</code></li>
+  <li><strong>The <code>worm</code> command</strong> displays the current configuration. You’ll see that the worm has a slot for a payload.</li>
+  <li><strong>Use <code>show payload</code></strong> to list available payloads. For this example, select <code>PyReverse</code>, which creates a reverse CMD connection.</li>
+  <li><strong>Run <code>worm</code></strong> again to confirm all settings (IP address, port, etc.) are configured correctly.</li>
+  <li><strong>When everything is ready</strong>, use the <code>build</code> command to compile your shellcode.</li>
+  <li><strong>Once the compiler finishes</strong>, your shellcode will be available in various formats inside the <code>OUTPUT/Hive</code> directory.</li>
+</ol>
+
+<p>You can also use build options like <code>build --food</code> or <code>build --spayload</code> to save the shellcode to your internal library for future use.</p>
+
+<hr />
+
+<p><em>Note: This tutorial assumes you are using the internal worm/shellcode generation system and have a compatible environment (Windows x64 target).</em></p>
+<p>
+  ▶️ <a href="https://vimeo.com/1098721709" target="_blank">
+    Watch Tutorial 4 on Vimeo
+  </a>
+</p>
+
 <hr>
 <h3>📁 More tutorials coming soon...</h3>
 <p>
